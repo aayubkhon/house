@@ -6,9 +6,9 @@ export const navbar = [
     id: useId,
     element: <Home />,
     title: "Home",
-    path: "/home",
-    private: false,
-    hidden: false,
+    path: "/home",asdasdasdasdasdas
+    private: false,asdasdasdasdasdd
+    hidden: false,addssadasdasdasd
   },
   {
     id: useId,
