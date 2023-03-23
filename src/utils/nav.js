@@ -1,18 +1,18 @@
-import { useId } from "../hooks/useId";
-import { Home } from "../pages/Home";
-import Properties from "../pages/Properties";
+import  useId  from "../hooks/useId";
+import HomePage from "../pages/Home"
+import PropertiesPage from "../pages/Properties"
 export const navbar = [
   {
     id: useId,
-    element: <Home />,
+    element: <HomePage/>,
     title: "Home",
-    path: "/home",asdasdasdasdasdas
-    private: false,asdasdasdasdasdd
-    hidden: false,addssadasdasdasd
+    path: "/home",
+    private: false,
+    hidden: false,
   },
   {
     id: useId,
-    element: <Properties />,
+    element: <PropertiesPage/>,
     title: "Properties",
     path: "/properties",
     private: false,
