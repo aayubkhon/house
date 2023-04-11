@@ -27,6 +27,7 @@ export const Navbar = () => {
           <button>sign in</button>
         </Section>
       </Wrapper>
+      asdfasdfasfasdfas
     </Container>
   );
 };
