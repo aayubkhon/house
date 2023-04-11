@@ -5,13 +5,13 @@ const Container = styled.div`
 display:flex;
 justify-content:center;
 flex-direction:column;
-
 `
 
 const Wrapper = styled.div`
 display:flex;
 align-items:center;
-max-width:144opx;
+max-width:1440px;
+width:100%;
 justify-content:space-between;
 height:64px;
 background:var(--colorPrimary);

@@ -18,7 +18,7 @@ export const Navbar = () => {
           {navbar.map(({title, path},index) => {
             return (
               <Link className={({isActive})=> isActive && 'active'} key={index} to={path}>
-                {title}
+                {title} 
               </Link>
             );
           })}
@@ -27,7 +27,6 @@ export const Navbar = () => {
           <button>sign in</button>
         </Section>
       </Wrapper>
-      asdfasdfasfasdfas
     </Container>
   );
 };
