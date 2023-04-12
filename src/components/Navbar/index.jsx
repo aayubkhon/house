@@ -1,32 +1,40 @@
 import React from "react";
-import {  Outlet, useNavigate } from "react-router-dom";
-import { Container, Logo, Section, Wrapper,Link } from "./style";
+import { Outlet, useNavigate } from "react-router-dom";
+import { Container, Logo, Section, Wrapper, Link } from "./style";
 import logoImg from "../../assets/logo/logo.svg";
 import { navbar } from "../../utils/nav";
+import Button from "../Generic/Button";
 export const Navbar = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Container>
-      <Outlet />
       <Wrapper>
-        <Section onClick={()=>navigate('/home')} logo>
+        <Section onClick={() => navigate("/home")} logo>
           <Logo src={logoImg} alt="" />
           <h2>Houzing</h2>
         </Section>
         <Section>
-          {navbar.map(({title, path},index) => {
+          {navbar.map(({ title, path,hidden }, index,) => {
             return (
-              <Link className={({isActive})=> isActive && 'active'} key={index} to={path}>
-                {title} 
-              </Link>
+              !hidden && (
+                <Link
+                  className={({ isActive }) => isActive && "active"}
+                  key={index}
+                  to={path}
+                >
+                  {title}
+                </Link>
+              )
             );
           })}
         </Section>
         <Section>
-          <button>sign in</button>
+          <Button onClick={() => navigate("/signin")} type={"dark"}>
+            Sign in
+          </Button>
         </Section>
       </Wrapper>
+      <Outlet />
     </Container>
   );
 };
