@@ -1,12 +1,18 @@
-import React from 'react'
-import { Container } from './style'
+import React from "react";
+import { Container } from "./style";
 
-const Button = ({children,type,onClick}) => {
+const Button = ({
+  children,
+  onClick,
+  type,
+  width,
+  height
+}) => {
   return (
-    <Container onClick={onClick} type={type}>
-      {children || 'Generic button'}
+    <Container height={height} width={width} onClick={onClick} type={type} >
+      {children || 'Generic Button'}
     </Container>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

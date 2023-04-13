@@ -1,15 +1,14 @@
 import React from 'react'
-import { Container } from './style'
-import Input from '../Generic/Input'
+import {Container} from '../Home/style'
+import {Input,Button} from '../Generic'
 
 export const Home = () => {
-
   return (
     <Container>
-      <h1>home</h1>
+      Home
       <Input/>
+      <Button>sada</Button>
     </Container>
   )
 }
-
 export default Home

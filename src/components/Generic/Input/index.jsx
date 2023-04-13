@@ -1,12 +1,28 @@
-import React from 'react'
-import { Container } from './style'
+import React from "react";
+import { Container } from "./style";
 
-const Input = ({children,type,onClick}) => {
+export const Input = ({
+  type,
+  onChange,
+  defaultValue,
+  value,
+  name,
+  placeholder,
+  width,
+  height
+}) => {
   return (
-    <Container onClick={onClick} type={type}>
-      {children || 'Generic button'}
-    </Container>
-  )
-}
+    <Container
+      defaultValue={defaultValue}
+      value={value}
+      name={name}
+      placeholder={placeholder}
+      onChange={onChange}
+      type={type}
+      width={width}
+      height={height}
+    />
+  );
+};
 
 export default Input

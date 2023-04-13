@@ -29,20 +29,18 @@ const getType = ({ type }) => {
   }
 };
 
-const Container = styled.div`
+const Container = styled.input`
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius:2px;
   height: ${({ height }) => (height ? `${height}px` : "40px")};
   width: ${({ width }) => (width ? `${width}px` : "128px")};
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "40px")};
   min-width: 120px;
   font-size: 14px;
-  ${getType}
-  cursor:pointer;
-  :active {
-    opacity: 0.7;
-  }
+  border:1px solid #E6E9EC;
+  /* ${getType} */
 `;
 
 export { Container };

@@ -29,10 +29,11 @@ const getType = ({ type }) => {
   }
 };
 
-const Container = styled.div`
+const Container = styled.button`
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius:2px;
   height: ${({ height }) => (height ? `${height}px` : "40px")};
   width: ${({ width }) => (width ? `${width}px` : "128px")};
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "40px")};
