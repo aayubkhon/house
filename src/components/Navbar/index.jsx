@@ -1,14 +1,16 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Container, Logo, Section, Wrapper, Link } from "./style";
+import { Container,Main, Logo, Section, Wrapper, Link } from "./style";
 import logoImg from "../../assets/logo/logo.svg";
 import { navbar } from "../../utils/nav";
 import Button from "../Generic/Button";
+import Filter from "../Filter";
 export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <Container>
-      <Wrapper>
+     {/* <Main> */}
+     <Wrapper>
         <Section onClick={() => navigate("/home")} logo>
           <Logo src={logoImg} alt="" />
           <h2>Houzing</h2>
@@ -34,6 +36,8 @@ export const Navbar = () => {
           </Button>
         </Section>
       </Wrapper>
+     {/* </Main> */}
+      <Filter/>
       <Outlet />
     </Container>
   );
