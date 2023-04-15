@@ -9,7 +9,8 @@ export const Input = ({
   name,
   placeholder,
   width,
-  height
+  height,
+  icon,
 }) => {
   return (
     <Container
@@ -21,6 +22,7 @@ export const Input = ({
       type={type}
       width={width}
       height={height}
+      icon={icon}
     />
   );
 };

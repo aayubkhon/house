@@ -9,7 +9,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <Container>
-     {/* <Main> */}
+     <Main>
      <Wrapper>
         <Section onClick={() => navigate("/home")} logo>
           <Logo src={logoImg} alt="" />
@@ -36,7 +36,7 @@ export const Navbar = () => {
           </Button>
         </Section>
       </Wrapper>
-     {/* </Main> */}
+     </Main>
       <Filter/>
       <Outlet />
     </Container>

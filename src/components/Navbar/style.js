@@ -5,17 +5,20 @@ const Container = styled.div`
 display:flex;
 justify-content:center;
 flex-direction:column;
-width:100%;
+`
+
+const Main = styled.div`
+display:flex;
+background:var(--colorPrimary);
+
 `
 
 const Wrapper = styled.div`
 display:flex;
 align-items:center;
-max-width:1440px;
 width:100%;
 justify-content:space-between;
 height:64px;
-background:var(--colorPrimary);
 color:#ffff;
 padding:var(--padding);
 font-size:16px;
@@ -39,4 +42,4 @@ text-decoration:none;
 color:#ffff;
 padding:0 32px;
 `
-export{Container,Wrapper,Section,Logo,Link}
+export{Container,Wrapper,Main,Section,Logo,Link}

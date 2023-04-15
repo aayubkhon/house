@@ -11,7 +11,7 @@ const getType = ({ type }) => {
     case "light":
       return {
         background: "#ffffff",
-        border: "1px solied #e6e9ec",
+        border: "1px solied ##E6E9EC",
         color: "#0d263b",
       };
     case "primary":
@@ -33,13 +33,14 @@ const Container = styled.input`
   align-items: center;
   display: flex;
   justify-content: center;
-  border-radius:2px;
+  border-radius: 2px;
   height: ${({ height }) => (height ? `${height}px` : "40px")};
   width: ${({ width }) => (width ? `${width}px` : "128px")};
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "40px")};
   min-width: 120px;
   font-size: 14px;
-  border:1px solid #E6E9EC;
+  border: 1px solid #e6e9ec;
+  padding-left: ${({ icon }) => (icon ? "50px" : "20px")};
   /* ${getType} */
 `;
 
