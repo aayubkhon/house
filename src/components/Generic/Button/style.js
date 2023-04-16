@@ -10,7 +10,7 @@ const getType = ({ type }) => {
       };
     case "light":
       return {
-        background: "#ffffff",
+        background: "#FFFFFF",
         border: "1px solid #e6e9ec",
         color: "#0d263b",
       };
@@ -18,13 +18,13 @@ const getType = ({ type }) => {
       return {
         background: "#0061df",
         border: "none",
-        color: "#fffff",
+        color: "#FFFFFF",
       };
     default:
       return {
         background: "#0061df",
         border: "none",
-        color: "#FFFFF",
+        color: "#FFFFFF",
       };
   }
 };

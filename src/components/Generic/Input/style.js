@@ -34,14 +34,28 @@ const Container = styled.input`
   display: flex;
   justify-content: center;
   border-radius: 2px;
-  height: ${({ height }) => (height ? `${height}px` : "40px")};
-  width: ${({ width }) => (width ? `${width}px` : "128px")};
-  font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "40px")};
+  height: ${({ height }) => (height ? `${height}px` : '40px')};
+  width: ${({ width }) => (width ? `${width}px` : '100%')};
+  font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '40px')};
   min-width: 120px;
   font-size: 14px;
   border: 1px solid #e6e9ec;
-  padding-left: ${({ icon }) => (icon ? "50px" : "20px")};
+  outline:none;
+  padding-left: ${({ icon }) => (icon ? "35px" : "20px")};
   /* ${getType} */
 `;
 
-export { Container };
+
+const Wrapper = styled.div`
+display:flex;
+align-items:center;
+  width: ${({ width }) => (width ? `${width}px` : '100%')};
+position:relative;
+`
+const Icon = styled.div`
+position:absolute;
+left:10px;
+
+`
+
+export { Container,Wrapper,Icon };

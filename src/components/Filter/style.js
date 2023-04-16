@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as search } from "../../assets/logo/loop.svg";
 import { ReactComponent as filter } from "../../assets/logo/setting-lines.svg";
-import { ReactComponent as houses } from "../../assets/logo/house.svg";
+import { ReactComponent as houses } from "../../assets/logo/home2.svg";
 const Container = styled.div`
   display: flex;
   padding: var(--padding);
@@ -13,13 +13,26 @@ const Container = styled.div`
 const Icons = styled.div``;
 
 Icons.Search = styled(search)`
-  margin-right: 8px;
+  margin-right: 10px;
+
 `;
 Icons.Filter = styled(filter)`
-  margin-right: 8px;
+  margin-right: 10px;
 `;
 Icons.Houses = styled(houses)`
-  margin-right: 8px;
+    margin-right: 10px;
 `;
 
-export { Container, Icons };
+const MenuWrapper = styled.div`
+padding:30px;
+background-color:white;
+border:1px solid #E6E9EC;
+`
+const Section = styled.div`
+display:flex;
+margin-top:10px;
+margin-bottom:20px;
+gap:20px;
+`
+
+export { Container, Icons,MenuWrapper,Section };

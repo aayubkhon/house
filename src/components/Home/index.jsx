@@ -1,12 +1,11 @@
 import React from 'react'
 import {Container} from '../Home/style'
-import {Input,Button} from '../Generic'
+import Carousel from '../Carousel'
 
 export const Home = () => {
   return (
     <Container>
-      Home
-      <Input/>
+      <Carousel/>
     </Container>
   )
 }
