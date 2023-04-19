@@ -21,7 +21,7 @@ export const GenCarousel = () => {
   };
   return (
     <Container>
-      <Carousel ref={slider} afterChange={onChange}>
+      <Carousel  ref={slider} afterChange={onChange}>
         <Img src={img1} />
         <Img src={img2} />
         <Img src={img3} />
@@ -32,8 +32,8 @@ export const GenCarousel = () => {
         <Content.Desc>112 Glenwood Ave Hyde Park, Boston, MA</Content.Desc>
         <Content.Price>$5,250/month</Content.Price>
       </Content>
-      <Arrow onClick={OnMove} data-name="left" left />
-      <Arrow onClick={OnMove} data-name="right" />
+      <Arrow onClick={OnMove} data-name="left"  />
+      <Arrow onClick={OnMove} data-name="right"  />
     </Container>
   );
 };

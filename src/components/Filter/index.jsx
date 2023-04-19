@@ -16,7 +16,7 @@ export const Filter = () => {
   const minPriceRef = useRef();
   const maxPriceRef = useRef();
   
-  const menu = (
+  const item = (
     <MenuWrapper>
       <h1 className="subTitle">Address</h1>
       <Section>
@@ -44,7 +44,7 @@ export const Filter = () => {
         icon={<Icons.Houses />}
         placeholder={"Enter an address, neighborhood, city, or ZIP code"}
       />
-      <Dropdown overlay={menu} placement="bottomRight" arrow>
+      <Dropdown overlay={item} placement="bottomRight" arrow>
         <div>
           <Button type={"light"}>
             <Icons.Filter />
