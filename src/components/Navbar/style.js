@@ -5,6 +5,11 @@ const Container = styled.div`
 display:flex;
 justify-content:center;
 flex-direction:column;
+`
+
+const Main = styled.div`
+display:flex;
+background:var(--colorPrimary);
 
 `
 
@@ -15,6 +20,9 @@ max-width:144opx;
 justify-content:space-between;
 height:64px;
 background:var(--colorPrimary);
+width:100%;
+justify-content:space-between;
+height:64px;
 color:#ffff;
 padding:var(--padding);
 font-size:16px;
@@ -38,4 +46,4 @@ text-decoration:none;
 color:#ffff;
 padding:0 32px;
 `
-export{Container,Wrapper,Section,Logo,Link}
+export{Container,Wrapper,Main,Section,Logo,Link}
